@@ -1,0 +1,191 @@
+# Salary Prediction using Linear Regression 📊
+
+## Overview
+
+This project focuses on predicting employee salaries using Machine Learning techniques. The main objective is to understand how different employee-related factors influence salary and build a predictive model using Linear Regression.
+
+In this project, I implemented:
+- Simple Linear Regression
+- Multiple Linear Regression
+
+The complete workflow includes data preprocessing, handling missing values, encoding categorical variables, model training, prediction, and performance evaluation.
+
+---
+
+## Dataset
+
+The dataset contains employee details with the following features:
+
+- Age
+- Gender
+- Education Level
+- Job Title
+- Years of Experience
+- Salary
+
+### Target Variable:
+- Salary
+
+### Input Features:
+- Age
+- Gender
+- Education Level
+- Job Title
+- Years of Experience
+
+---
+
+## Project Workflow
+
+### 1. Data Understanding
+
+- Loaded the dataset using Pandas.
+- Performed data inspection using:
+  - `head()`
+  - `info()`
+  - `describe()`
+
+---
+
+### 2. Data Preprocessing
+
+Performed preprocessing steps:
+
+- Checked and handled missing values.
+- Converted categorical variables into numerical values.
+- Applied One-Hot Encoding on:
+
+  - Gender
+  - Education Level
+  - Job Title
+
+---
+
+# Simple Linear Regression
+
+Simple Linear Regression was implemented to analyze the relationship between:
+
+**Feature:**
+- Years of Experience
+
+**Target:**
+- Salary
+
+The model predicts salary based on years of experience.
+
+Linear Equation:
+
+```
+Salary = m × Years of Experience + b
+```
+
+Where:
+- m = Slope
+- b = Intercept
+
+---
+
+# Multiple Linear Regression
+
+Multiple Linear Regression was implemented using multiple features to improve salary prediction.
+
+### Features Used:
+
+- Age
+- Years of Experience
+- Gender
+- Education Level
+- Job Title
+
+### Target:
+
+- Salary
+
+---
+
+## Model Building
+
+The model was trained using Scikit-Learn Linear Regression.
+
+```python
+from sklearn.linear_model import LinearRegression
+
+model = LinearRegression()
+
+model.fit(X_train, y_train)
+```
+
+---
+
+## Model Evaluation
+
+The model performance was evaluated using:
+
+### Mean Absolute Error (MAE)
+Measures the average difference between actual and predicted salary.
+
+### Mean Squared Error (MSE)
+Measures the average squared difference between actual and predicted values.
+
+### Root Mean Squared Error (RMSE)
+Represents prediction error in the same unit as salary.
+
+### R² Score
+Shows how well the model explains the variation in salary.
+
+---
+
+## Visualization
+
+The project includes:
+
+- Data analysis visualizations
+- Regression line visualization
+- Actual vs Predicted salary comparison
+- 3D visualization of salary relationship
+
+---
+
+## Technologies Used
+
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Plotly
+- Scikit-Learn
+- Jupyter Notebook
+
+---
+
+## Results
+
+The Linear Regression model successfully learned the relationship between employee features and salary.
+
+The model achieved a good R² score, showing that experience and other employee attributes have a strong impact on salary prediction.
+
+---
+
+## Future Improvements
+
+Future improvements can include:
+
+- Trying advanced regression algorithms:
+  - Random Forest Regression
+  - Gradient Boosting
+  - XGBoost
+
+- Hyperparameter tuning
+- Model deployment using Streamlit
+
+---
+
+## Author
+
+**Shivani**
+
+B.Tech Computer Science Engineering
+
+---
+
+⭐ If you find this project useful, feel free to star the repository!
