@@ -3,6 +3,7 @@
 ![Machine Learning](https://img.shields.io/badge/Machine%20Learning-Regression-blue)
 ![Python](https://img.shields.io/badge/Python-3.x-yellow)
 ![Scikit-Learn](https://img.shields.io/badge/Library-Scikit--Learn-orange)
+![kaggle](https://www.kaggle.com/code/shivani531/salary-prediction-dataset-linearregression)
 
 ## 📌 Project Overview
 
